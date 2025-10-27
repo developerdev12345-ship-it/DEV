@@ -17,8 +17,7 @@ io.on("connection",(socket)=>{
     })
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000 || process.env.PORT;
 httpServer.listen(PORT, () => {
   console.log(`Server running`);
-
 });
